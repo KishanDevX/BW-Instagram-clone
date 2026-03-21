@@ -1,0 +1,86 @@
+/* .home-page header {
+  background-color: red;
+} */
+
+.home-top-sec {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--gap-sm) var(--gap-sm);
+}
+
+.insta-word-mark {
+  height: 3rem;
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.insta-word-mark img {
+  height: 8rem;
+  width: auto;
+}
+
+.insta-word-mark .icon {
+  height: 1rem;
+}
+
+.home-story-sec {
+  /* background-color: orange; */
+  padding-left: var(--gap-md);
+  display: flex;
+  gap: var(--gap-md);
+  overflow-x: auto;
+}
+
+.story-card {
+  /* border: 2px solid white; */
+  display: flex;
+  /* width: 5.5rem; */
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-sm);
+  /* flex-direction: column; */
+}
+
+.story-dp {
+  height: 5rem;
+  aspect-ratio: 1;
+  border: 1px solid white;
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.profile-name {
+  /* background-color: red; */
+  white-space: nowrap;
+  color: var(--txt-light-700);
+  width: 5rem;
+  font-size: var(--font-size-md);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.your-story {
+  position: relative;
+}
+
+.add-story-icon {
+  height: 2rem;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 1.4rem;
+  background-color: var(--txt-light-700);
+  right: 0;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  box-shadow: 0 0 2px var(--primary-color);
+}

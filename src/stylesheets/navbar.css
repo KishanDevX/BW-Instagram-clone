@@ -1,0 +1,20 @@
+nav {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+nav ul li {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li .icon {
+  margin-top: var(--gap-md);
+  color: var(--txt-light-700);
+}

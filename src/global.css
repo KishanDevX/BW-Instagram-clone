@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --primary-color: #0d0f15;
+
+  --txt-light-700: rgba(255, 255, 255, 0.932);
+  --txt-light-600: rgba(255, 255, 255, 0.843);
+  --txt-light-500: rgba(255, 255, 255, 0.634);
+  --txt-light-300: rgba(255, 255, 255, 0.478);
+  --txt-light-100: rgba(255, 255, 255, 0.28);
+
+  --font-size-sm: 1rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 3rem;
+
+  --icon-xsm: 1.2rem;
+  --icon-sm: 1.5rem;
+  --icon-md: 1.8rem;
+  --icon-lg: 2.5rem;
+
+  --gap-xsm: 0.3rem;
+  --gap-sm: 0.5rem;
+  --gap-md: 1rem;
+  --gap-lg: 2rem;
+  --gap-xl: 3rem;
+}
+
+/* <<== DEFAULTS (open) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+button,
+ul,
+li,
+a,
+input,
+textarea {
+  all: unset;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Hide scrollbar for Chrome, Safari and Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for IE and old Edge */
+body {
+  -ms-overflow-style: none;
+}
+
+body {
+  width: 100vw;
+  height: 100dvh;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.view-part {
+  width: 100%;
+  max-width: 30rem;
+  background-color: var(--primary-color);
+}
+
+.top-view {
+  height: 90%;
+  overflow-y: auto;
+}
+
+nav {
+  height: 10%;
+}
+
+.icon {
+  height: var(--icon-md);
+  aspect-ratio: 1;
+  color: var(--txt-light-700);
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+}
+/* DEFAULTS (close) ==> */
