@@ -3,13 +3,15 @@
 :root {
   --primary-color: #0d0f15;
 
+  --accent-white: white;
+
   --txt-light-700: rgba(255, 255, 255, 0.932);
   --txt-light-600: rgba(255, 255, 255, 0.843);
   --txt-light-500: rgba(255, 255, 255, 0.634);
   --txt-light-300: rgba(255, 255, 255, 0.478);
   --txt-light-100: rgba(255, 255, 255, 0.28);
 
-  --font-size-sm: 1rem;
+  --font-size-sm: 0.8rem;
   --font-size-md: 1rem;
   --font-size-lg: 3rem;
 
@@ -19,7 +21,7 @@
   --icon-lg: 2.5rem;
 
   --gap-xsm: 0.3rem;
-  --gap-sm: 0.5rem;
+  --gap-sm: 0.6rem;
   --gap-md: 1rem;
   --gap-lg: 2rem;
   --gap-xl: 3rem;
@@ -78,16 +80,14 @@ body {
 .view-part {
   width: 100%;
   max-width: 30rem;
+  display: flex;
+  flex-direction: column;
   background-color: var(--primary-color);
 }
 
 .top-view {
-  height: 90%;
   overflow-y: auto;
-}
-
-nav {
-  height: 10%;
+  flex: 1;
 }
 
 .icon {
@@ -99,5 +99,5 @@ nav {
 .page {
   width: 100%;
   height: 100%;
+  color: white;
 }
-/* DEFAULTS (close) ==> */
