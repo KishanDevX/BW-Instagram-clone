@@ -7,7 +7,9 @@ const StoryCard = ({ profile_name, profile_dp, txt, has_story }) => {
         {txt && <span className="name-dp">{txt}</span>}
         {profile_dp && <img src={profile_dp} alt="person" />}
       </div>
-      <div className="profile-name">{profile_name}</div>
+      <div className={`profile-name ${has_story ? "no-dim" : ""}`}>
+        {profile_name}
+      </div>
     </div>
   );
 };

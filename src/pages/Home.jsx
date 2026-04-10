@@ -7,17 +7,37 @@ import PostCard from "../components/PostCard";
 import StoryCard from "../components/StoryCard";
 
 // DATA
-const profile_stories_Data = [];
+const profileStories_Data = [];
 const boss = "Kishan_Kumar";
 for (let i = 0; i < boss.length; i++) {
-  profile_stories_Data.push({
+  profileStories_Data.push({
     profile_name: `user_${i + 1}`,
     profile_dp: `https://i.pravatar.cc/150?img=${i}`,
     // txt: boss[i],
     has_story: false,
   });
 }
-profile_stories_Data[2].has_story = true;
+profileStories_Data[2].has_story = true;
+
+const postFeed_Data = [
+  {
+    username: "user_1",
+    user_dp: "https://i.pravatar.cc/150?img=1",
+    time_posted: "2 hours ago",
+    content: {
+      type: "image",
+      src: "#",
+      title: "A beautiful sunset",
+      description: "Enjoying the view at the beach!",
+    },
+    engagement: {
+      likes: 120,
+      comments: 15,
+      share: 13,
+      reposts: 5,
+    },
+  },
+];
 
 // SECTIONS
 const HomeNavbar = () => {
@@ -41,9 +61,9 @@ const StoryBox = () => {
           <img src={Insta_def_dp} alt="person" />
           <span className="add-story-icon">+</span>
         </div>
-        <div className="profile-name">Your story</div>
+        <div className="profile-name no-dim">Your story</div>
       </div>
-      {profile_stories_Data.map((profile, idx) => {
+      {profileStories_Data.map((profile, idx) => {
         return (
           <StoryCard
             key={idx}
@@ -61,7 +81,7 @@ const StoryBox = () => {
 const PostFeed = () => {
   return (
     <div className="post-feed">
-      <p>posts will be displayed here</p>
+      <PostCard />
     </div>
   );
 };

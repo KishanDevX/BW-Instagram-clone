@@ -4,6 +4,7 @@
   --primary-color: #0d0f15;
 
   --accent-white: white;
+  --accent-gray: #2b2f36;
 
   --txt-light-700: rgba(255, 255, 255, 0.932);
   --txt-light-600: rgba(255, 255, 255, 0.843);
@@ -12,7 +13,7 @@
   --txt-light-100: rgba(255, 255, 255, 0.28);
 
   --font-size-sm: 0.8rem;
-  --font-size-md: 1rem;
+  --font-size-md: 0.9rem;
   --font-size-lg: 3rem;
 
   --icon-xsm: 1.2rem;

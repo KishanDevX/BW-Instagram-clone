@@ -1,49 +1,74 @@
 import React from "react";
+import { MusicIcon, RepostIcon, Three_dots_Icon } from "../assets/icons";
 
-const Dots_verticalIcon = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      stroke="currentColor"
-      className="icon icon-dots-vertical"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
-      />
-    </svg>
-  );
-};
+const postFeed_Data = [
+  {
+    username: "user_1",
+    user_dp: "https://i.pravatar.cc/150?img=1",
+    time_posted: "2 hours ago",
+    content: {
+      type: "image",
+      src: "https://unsplash.com/photos/a-frame-cabin-nestled-in-a-dense-forest-drhNiF9y8to",
+      audio_src: "#",
+      title: "A beautiful sunset",
+      description: "Enjoying the view at the beach!",
+    },
+    engagement: {
+      likes: 120,
+      comments: 15,
+      share: 13,
+      reposts: 5,
+    },
+  },
+];
 
-const PostCard = ({
-  post_dp,
-  post_username,
-  post_about,
-  post_content,
-  content_desc,
-  upload_time,
-  social,
-}) => {
+const PostCard = () => {
   return (
-    <div className="post-card">
-      <div className="post-header">
-        <div className="post-head-left">
-          <div className="post-dp">
-            <img src={post_dp} alt="person" />
-          </div>
-          <div className="post-profile-info">
-            <div className="post-profile-name">{post_username}</div>
-            <div className="post-profile-about">{post_about}</div>
+    <div className="postCard">
+      <div className="post-top">
+        <div className="pic">
+          {/* <img src="https://i.pravatar.cc/150?img=1" alt="pic" /> */}
+        </div>
+        <div className="info">
+          <span className="username">Kishan Kumar</span>
+          <div className="audio-name">
+            <MusicIcon /> Audio Title
           </div>
         </div>
-        <div className="post-head-right">
-          <button>Follow</button>
-          <Dots_verticalIcon />
+        <button>Follow</button>
+        <Three_dots_Icon />
+      </div>
+      <div className="post-content">
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+          alt=""
+        />
+      </div>
+      <div className="post-bottom">
+        <ul className="engagement">
+          <li className="likes">
+            <i class="ri-poker-hearts-line"></i> 78
+          </li>
+          <li className="comments">
+            <i class="ri-chat-3-line"></i> 56
+          </li>
+          <li className="reposts">
+            <RepostIcon /> 6.2K
+          </li>
+          <li className="share">
+            <i class="ri-send-ins-line"></i> 35
+          </li>
+          <li className="bookmark">
+            <i class="ri-bookmark-line"></i>
+          </li>
+        </ul>
+        <div className="content-txt">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At provident
+          facilis quisquam eum quis enim amet harum animi, ipsam molestias
+          dicta, ipsum facere, voluptas molestiae maxime. Natus alias sunt
+          reiciendis.
         </div>
+        <div className="time-posted">March 4</div>
       </div>
     </div>
   );

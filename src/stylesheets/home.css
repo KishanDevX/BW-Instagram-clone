@@ -26,7 +26,7 @@
 
 /* STORY BOX */
 .storyBox {
-  padding: 0 var(--gap-md);
+  padding: 0 var(--gap-sm);
   display: flex;
   gap: var(--gap-sm);
   overflow-x: auto;
@@ -44,7 +44,7 @@
   padding: 3px;
   border-radius: 50%;
 
-  background-color: #2b2f36;
+  background-color: var(--accent-gray);
 
   display: flex;
   align-items: center;
@@ -85,13 +85,17 @@
 
 .profile-name {
   white-space: nowrap;
-  color: var(--txt-light-700);
+  color: #9da2ad;
   width: 5rem;
   font-size: var(--font-size-sm);
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: center;
   margin-top: 3px;
+}
+
+.no-dim {
+  color: var(--txt-light-700);
 }
 
 .your-story {
@@ -113,4 +117,116 @@
   color: var(--primary-color);
   font-size: 1rem;
   box-shadow: 0 0 2px var(--primary-color);
+}
+
+/* POST FEEDS */
+.post-feed {
+  /* background-color: chocolate; */
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
+  padding: 0.5rem 0;
+}
+
+.post-top {
+  /* background-color: red; */
+  display: flex;
+  /* padding: 0 var(--gap-sm) 0.6rem var(--gap-sm); */
+  align-items: center;
+  padding: var(--gap-sm);
+  gap: 0.5rem;
+}
+
+.post-top .pic {
+  height: 2.5rem;
+  aspect-ratio: 1;
+  /* background-color: aqua; */
+  border: 2px solid var(--accent-gray);
+  border-radius: 50%;
+}
+
+.post-top .info {
+  /* background-color: #d62976; */
+  flex: 1;
+}
+
+.post-top button {
+  /* background-color: tomato; */
+  font-size: var(--font-size-md);
+  color: var(--txt-light-700);
+  border: 1px solid var(--txt-light-700);
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.3rem;
+}
+
+.post-top .icon {
+  /* background-color: orange; */
+  height: 20px;
+}
+
+.info .username {
+  font-size: var(--font-size-md);
+  color: var(--txt-light-700);
+}
+
+.info .audio-name {
+  color: var(--txt-light-600);
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-sm);
+}
+
+.info .audio-name .icon {
+  height: 15px;
+  margin-right: 2px;
+}
+
+.post-content {
+  min-height: 10vh;
+  max-height: 85vh;
+}
+
+.post-bottom {
+  /* background-color: orange; */
+  width: 100%;
+  display: flex;
+  padding: var(--gap-sm);
+  flex-direction: column;
+  /* height: 2rem; */
+}
+
+.post-bottom .engagement {
+  /* background-color: violet; */
+  width: 100%;
+  display: flex;
+  gap: var(--gap-md);
+  align-items: center;
+}
+
+.engagement li {
+  /* border: 2px solid white; */
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.engagement li i {
+  font-size: 1.5rem;
+}
+
+.bookmark {
+  margin-left: auto;
+}
+
+.content-txt {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.time-posted {
+  padding-top: 0.4rem;
+  font-size: var(--font-size-sm);
+  color: var(--txt-light-500);
 }
