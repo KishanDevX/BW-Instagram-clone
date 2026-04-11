@@ -129,9 +129,7 @@
 }
 
 .post-top {
-  /* background-color: red; */
   display: flex;
-  /* padding: 0 var(--gap-sm) 0.6rem var(--gap-sm); */
   align-items: center;
   padding: var(--gap-sm);
   gap: 0.5rem;
@@ -140,18 +138,16 @@
 .post-top .pic {
   height: 2.5rem;
   aspect-ratio: 1;
-  /* background-color: aqua; */
   border: 2px solid var(--accent-gray);
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .post-top .info {
-  /* background-color: #d62976; */
   flex: 1;
 }
 
 .post-top button {
-  /* background-color: tomato; */
   font-size: var(--font-size-md);
   color: var(--txt-light-700);
   border: 1px solid var(--txt-light-700);
@@ -160,7 +156,6 @@
 }
 
 .post-top .icon {
-  /* background-color: orange; */
   height: 20px;
 }
 
@@ -187,24 +182,22 @@
 }
 
 .post-bottom {
-  /* background-color: orange; */
   width: 100%;
   display: flex;
   padding: var(--gap-sm);
   flex-direction: column;
-  /* height: 2rem; */
 }
 
 .post-bottom .engagement {
-  /* background-color: violet; */
   width: 100%;
   display: flex;
   gap: var(--gap-md);
   align-items: center;
+  /* background-color: red; */
+  padding-bottom: 0.4rem;
 }
 
 .engagement li {
-  /* border: 2px solid white; */
   display: flex;
   gap: 2px;
   align-items: center;

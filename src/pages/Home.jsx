@@ -5,6 +5,7 @@ import Insta_def_dp from "../assets/images/def-insta-dp.jpg";
 import { PlusIcon, Arrow_downIcon, HeartIcon } from "../assets/icons";
 import PostCard from "../components/PostCard";
 import StoryCard from "../components/StoryCard";
+import { postFeed_data } from "../data/postFeed";
 
 // DATA
 const profileStories_Data = [];
@@ -18,26 +19,6 @@ for (let i = 0; i < boss.length; i++) {
   });
 }
 profileStories_Data[2].has_story = true;
-
-const postFeed_Data = [
-  {
-    username: "user_1",
-    user_dp: "https://i.pravatar.cc/150?img=1",
-    time_posted: "2 hours ago",
-    content: {
-      type: "image",
-      src: "#",
-      title: "A beautiful sunset",
-      description: "Enjoying the view at the beach!",
-    },
-    engagement: {
-      likes: 120,
-      comments: 15,
-      share: 13,
-      reposts: 5,
-    },
-  },
-];
 
 // SECTIONS
 const HomeNavbar = () => {
@@ -81,7 +62,18 @@ const StoryBox = () => {
 const PostFeed = () => {
   return (
     <div className="post-feed">
-      <PostCard />
+      {postFeed_data.map((data, idx) => {
+        return (
+          <PostCard
+            key={idx}
+            username={data.username}
+            user_dp={data.user_dp}
+            time_posted={data.time_posted}
+            content={data.content}
+            engagement={data.engagement}
+          />
+        );
+      })}
     </div>
   );
 };
