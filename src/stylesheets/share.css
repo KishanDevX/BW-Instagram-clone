@@ -1,0 +1,30 @@
+.share-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+    color: var(--txt-light-600);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.03);
+    color: var(--accent-red);
+  }
+}
+
+.share-page p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  /* color: var(--txt-light-600); */
+  animation: breathe 3s ease-in-out infinite;
+}
+
+.share-page p i {
+  margin-right: 2px;
+}

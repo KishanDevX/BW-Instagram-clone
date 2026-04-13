@@ -1,0 +1,140 @@
+.profileNavbar {
+  display: flex;
+  align-items: center;
+  /* padding: var(--gap-sm) var(--gap-md); */
+  padding: var(--gap-md) var(--gap-sm);
+
+  color: var(--txt-light-700);
+  justify-content: space-between;
+}
+
+.username {
+  font-size: 1.1rem;
+  font-weight: var(--font-bold-md);
+}
+
+.icon-menu {
+  font-size: 1.5rem;
+}
+
+.icon-threads {
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+.userCard {
+  display: grid;
+  /* background-color: red; */
+  padding: var(--gap-md);
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+}
+
+.userCard .user-pic {
+  height: 5.8rem;
+  padding: var(--gap-sm);
+  aspect-ratio: 1;
+}
+
+.user-pic img {
+  border-radius: 50%;
+}
+
+.userCard .user-pop {
+  /* background-color: green; */
+  height: auto;
+  width: 100%;
+  margin-left: var(--gap-md);
+}
+
+.user-pop .realname {
+  font-weight: var(--font-bold-md);
+  font-size: var(--font-size-lg);
+  color: var(--txt-light-700);
+}
+
+.user-pop .fameBox {
+  /* background-color: red; */
+  margin-top: 10px;
+  display: flex;
+  gap: 1.2rem;
+  color: var(--txt-light-700);
+}
+
+.fameLabel {
+  font-size: var(--font-size-sm);
+}
+
+.fameValue {
+  font-weight: var(--font-bold-md);
+  margin-bottom: 2px;
+}
+
+.userCard .user-bio {
+  /* background-color: aqua; */
+  /* height: 6rem; */
+  grid-column: span 2;
+}
+
+.userCard .user-bio {
+  margin-top: 2px;
+  line-height: 1.2rem;
+  font-size: var(--font-size-md);
+}
+
+.user-bio .category {
+  font-size: var(--font-size-lg);
+  color: var(--txt-light-500);
+  margin-bottom: 3px;
+}
+
+.user-bio .text {
+  color: var(--txt-light-700);
+  white-space: pre-line;
+}
+
+.user-bio .links {
+  display: flex;
+  color: var(--accent-blue);
+  flex-direction: column;
+}
+
+.profileControls {
+  margin: 0 var(--gap-md);
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.profileControls .pro-dash {
+  grid-column: span 2;
+  background-color: var(--accent-gray);
+  border-radius: 0.5rem;
+  padding: var(--gap-md);
+}
+
+.pro-dash h4 {
+  font-size: var(--font-size-md);
+  margin-bottom: 3px;
+  font-weight: var(--font-bold-md);
+}
+
+.pro-dash p {
+  font-size: var(--font-size-sm);
+  color: var(--txt-light-500);
+}
+
+.pro-dash p .icon-arrow {
+  color: var(--accent-green);
+}
+
+.profileControls button {
+  /* background-color: red; */
+  font-size: var(--font-size-md);
+  text-align: center;
+  font-weight: var(--font-bold-md);
+  background-color: var(--accent-gray);
+  border-radius: 0.5rem;
+  padding: var(--gap-sm) 0;
+}

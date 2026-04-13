@@ -1,0 +1,145 @@
+.reels-page {
+  position: relative;
+  overflow: hidden;
+  /* background-color: pink; */
+}
+
+.reel-vid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 10;
+}
+
+.reel-top {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: none;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  /* position: relative; */
+  padding: 1rem 0;
+}
+
+.reel-top .icon-plus {
+  /* background-color: green; */
+  position: absolute;
+  left: 0.5rem;
+}
+
+.reel-top .frnd-label {
+  color: var(--txt-light-600);
+  padding: 0 0.3rem 0 0.7rem;
+}
+
+.triple-circles {
+  display: flex;
+}
+
+.circle {
+  height: 1.2rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--txt-light-500);
+}
+
+.reel-engagement {
+  /* height: 20rem; */
+  /* width: 20%; */
+  /* background-color: greenyellow; */
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  display: flex;
+  gap: var(--gap-md);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  bottom: 0;
+}
+
+.reel-engagement li {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reel-engagement li span {
+  font-size: var(--font-size-sm);
+}
+
+.reel-engagement .icon {
+  height: 2.2rem;
+}
+
+.icon-plane {
+  font-size: 1.6rem !important;
+}
+
+.icon-bookmark {
+  height: 1.8rem !important;
+}
+
+.reel-audio {
+  height: 1.5rem;
+  aspect-ratio: 1;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  border: 2px solid var(--txt-light-700);
+}
+
+.icon-three-dots {
+  height: 1.6rem !important;
+}
+
+.user-info {
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  padding: var(--gap-sm) var(--gap-md);
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  gap: var(--gap-sm);
+}
+
+.info-top {
+  display: flex;
+  align-items: center;
+}
+
+.user-info .user-dp {
+  height: 2.3rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 8px;
+}
+
+.user-info .username {
+  /* background-color: blue; */
+  font-size: var(--font-size-lg);
+  font-weight: 400;
+}
+
+.user-info button {
+  /* background-color: chartreuse; */
+  font-size: var(--font-size-md);
+  color: var(--txt-light-700);
+  border: 1px solid var(--txt-light-700);
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.3rem;
+  margin-left: 12px;
+}
+
+.user-info .captions {
+  grid-column: span 3;
+  /* columns: span 3; */
+  font-size: var(--font-size-md);
+}

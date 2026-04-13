@@ -4,10 +4,13 @@
   --primary-color: #0d0f15;
 
   --accent-white: white;
+  --accent-red: #ff0026;
+  --accent-blue: #9696df;
+  --accent-green: #00de66;
   --accent-gray: #2b2f36;
 
   --txt-light-700: rgba(255, 255, 255, 0.932);
-  --txt-light-600: rgba(255, 255, 255, 0.843);
+  --txt-light-600: rgba(255, 255, 255, 0.809);
   --txt-light-500: rgba(255, 255, 255, 0.634);
   --txt-light-300: rgba(255, 255, 255, 0.478);
   --txt-light-100: rgba(255, 255, 255, 0.28);
@@ -15,6 +18,10 @@
   --font-size-sm: 0.8rem;
   --font-size-md: 0.9rem;
   --font-size-lg: 1rem;
+
+  --font-bold-sm: 300;
+  --font-bold-md: 500;
+  --font-bold-lg: 800;
 
   --icon-xsm: 1.2rem;
   --icon-sm: 1.5rem;
