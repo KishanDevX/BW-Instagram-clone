@@ -5,7 +5,7 @@ import Reels from "./pages/Reels";
 import Share from "./pages/Share";
 import Find from "./pages/Find";
 import { Routes, Route } from "react-router-dom";
-import Profile from "./pages/Profile";
+import Profile, { MentionsTab, PostsTab, ReelsTab } from "./pages/Profile";
 
 const App = () => {
   return (
@@ -16,7 +16,12 @@ const App = () => {
           <Route path="/reels" element={<Reels />} />
           <Route path="/share" element={<Share />} />
           <Route path="/find" element={<Find />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile" element={<Profile />}>
+            <Route index element={<PostsTab />} />
+            <Route path="posts" element={<PostsTab />} />
+            <Route path="reels" element={<ReelsTab />} />
+            <Route path="mentions" element={<MentionsTab />} />
+          </Route>
         </Routes>
       </div>
       <Navbar />

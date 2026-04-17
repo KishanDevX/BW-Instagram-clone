@@ -5,7 +5,7 @@ const Share = () => {
   return (
     <div className="page share-page">
       <p>
-        <i class="ri-tools-line"></i>
+        <i className="ri-tools-line"></i>
         Under Construction...
       </p>
     </div>

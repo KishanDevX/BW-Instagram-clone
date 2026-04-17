@@ -71,8 +71,6 @@
 }
 
 .userCard .user-bio {
-  /* background-color: aqua; */
-  /* height: 6rem; */
   grid-column: span 2;
 }
 
@@ -130,11 +128,32 @@
 }
 
 .profileControls button {
-  /* background-color: red; */
   font-size: var(--font-size-md);
   text-align: center;
   font-weight: var(--font-bold-md);
   background-color: var(--accent-gray);
   border-radius: 0.5rem;
   padding: var(--gap-sm) 0;
+}
+
+.profile-tabs .tab-nav {
+  /* background-color: yellow; */
+  font-size: 1.5rem;
+  /* padding-top: 15px; */
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-evenly;
+  flex-direction: row;
+  color: var(--txt-light-500);
+  border-bottom: 1px solid var(--accent-gray);
+}
+
+.tab-nav a {
+  /* background-color: red; */
+  padding: 0.3rem 1rem;
+}
+
+.tab-nav a.active {
+  color: var(--txt-light-700);
+  border-bottom: 2px solid var(--txt-light-700);
 }
